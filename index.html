@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Simulação Financiamento</title>
+</head>
+<body>
+    <main>
+        <h1>Simulação de Financiamento</h1>
+        <div class="inputs">
+            <label>Valor:<input name="valor" class="valor" value="200000" step="0.01" type="number"></label>
+            <label>Prazo(anos):<input name="prazoAno" class="prazoAno" value="20" step="0.01" type="number"></label>   
+            <label>Juros ao ano:<input name="jurosAno" class="jurosAno" value="0.08" step="0.01" type="number"></label>
+            
+        </div>
+        <div class="btn">
+            <button id="btn-simula" type="button">Simular</button>
+        </div>
+        <div class="resultado">
+            <label>Prazo (meses):<input name="prazoMes" class="prazoMes" type="number" readonly></label>        
+            <label>Juros ao mês:<input name="jurosMes" class="jurosMes" type="number"></label> 
+            <label>Juros acumulados:<input name="jurosAcumulados" class="jurosAcumulados" type="number"></label>
+            
+        </div>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Prestação</th>
+                    <th>Amortização</th>
+                    <th>Juros</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyid">
+            </tbody>
+        </table>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

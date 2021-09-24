@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    height: 40vh;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    background-color: rgb(196, 241, 255);
+    border-radius: 5px;
+    
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: rgb(0, 126, 168);;
+}
+
+div.resultado{
+    margin: 0 10px;
+}
+
+div.inputs {
+    height: max-content;
+}
+
+input {
+    width: 100px;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(0, 126, 168);
+    border: 1px solid rgb(0, 126, 168);
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(196, 239, 253);
+    border: 1px solid rgb(196, 239, 253);
+    color: black;
+    cursor: pointer;
+}
+
+thead {
+    color: rgb(0, 126, 168);
+}
+
+th {
+    padding-right: 50px;
+}
+
